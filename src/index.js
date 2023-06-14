@@ -87,6 +87,12 @@ function Menu() {
         price={12}
         photoName="pizzas/margherita.jpg"
       />
+      <Pizza
+        name="Pizza Spinaci"
+        ingredients="Tomato, mozarella, spinach, and ricotta cheese"
+        price={12}
+        photoName="pizzas/spinaci.jpg"
+      />
     </main>
   );
 }
