@@ -134,7 +134,12 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {new Date().toLocaleTimeString()}. {isOpen}
+      <div className="order">
+        <p>
+          {new Date().toLocaleTimeString()}. {isOpen}
+        </p>
+        <button className="btn">Order</button>
+      </div>
     </footer>
   );
   //   return React.createElement("Footer", null, "We're currently open!");
