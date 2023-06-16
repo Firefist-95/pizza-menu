@@ -129,11 +129,27 @@ function Pizza({ pizzaObj }) {
 
         <p>{pizzaObj.ingredients}</p>
 
-        {pizzaObj.soldOut ? (
-          <span>SOLD OUT</span>
-        ) : (
-          <span>${pizzaObj.price}</span>
-        )}
+        <p>
+          <button
+            style={{
+              color: "#fff",
+              background: "#fd7e14",
+              fontFamily: "inherit",
+              border: "none",
+              fontWeight: 500,
+              padding: "1.4rem 3.2rem",
+              cursor: "pointer",
+              transition: "all 0.2s",
+            }}
+          >
+            Add to Cart
+          </button>
+          {pizzaObj.soldOut ? (
+            <span>SOLD OUT</span>
+          ) : (
+            <span>${pizzaObj.price}</span>
+          )}
+        </p>
 
         {/* <span>{pizzaObj.soldOut ? `SOLD OUT` : pizzaObj.price}</span> */}
       </div>
